@@ -7,7 +7,6 @@ class Products {
     public $img;
     public $price;
     public $category;
-    public $icon;
 
 
     public function __construct (string $_name , string $_img , float $_price , Category $_category){

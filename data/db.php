@@ -3,15 +3,15 @@
  require_once __DIR__ . '/../Model/Category.php';
 
  $categories =[
-    new Category('Cani'),
-    new Category('Gatti'),
+    new Category('Cani <i class="fa-solid fa-dog"></i>'),
+    new Category('Gatti <i class="fa-solid fa-cat"></i>' ),
  ];
 
 $categoryDog = $categories[0];
 $categoryCat = $categories[1];
  
 $products = [
-    new Products('Palla giocattolo' , 'https://arcaplanet.vtexassets.com/arquivos/ids/260658/lovedi-gioco-cane-palla-con-punte-tpr-verde.jpg?v=637617645268130000' ,12.50 , $categoryDog),
+    new Products('Palla giocattolo' , 'https://arcaplanet.vtexassets.com/arquivos/ids/260658/lovedi-gioco-cane-palla-con-punte-tpr-verde.jpg?v=637617645268130000' ,12.50 , $categoryDog ),
 
     new Products('Tira graffi' , 'https://arcaplanet.vtexassets.com/arquivos/ids/281133/tiragraffi-wright.jpg?v=638125943164600000' ,25.50 , $categoryCat),
 
