@@ -1,13 +1,18 @@
  <?php
  require_once __DIR__ . '/../Model/Products.php';
  require_once __DIR__ . '/../Model/Category.php';
+ require_once __DIR__ . '/../Model/Food.php';
+
+// salvo in una variabile la categoria Cane/Gatto 
 
  $categories =[
     new Category('Cani <i class="fa-solid fa-dog"></i>'),
     new Category('Gatti <i class="fa-solid fa-cat"></i>' ),
  ];
 
-$categoryDog = $categories[0];
+//  assegno specificatamente la categoria cane o gatto alle variabili 
+
+$categoryDog = $categories[0]; 
 $categoryCat = $categories[1];
  
 $products = [
@@ -15,7 +20,7 @@ $products = [
 
     new Products('Tira graffi' , 'https://arcaplanet.vtexassets.com/arquivos/ids/281133/tiragraffi-wright.jpg?v=638125943164600000' ,25.50 , $categoryCat),
 
-    new Products('Crocchette' , 'https://rep.grupposme.net/RepAP?code=D1446861&skey=f3b6c41bd09b8d169679070be320a5ac&resize=500' , 7.00 , $categoryDog)
+    new Food('Crocchette' , 'https://rep.grupposme.net/RepAP?code=D1446861&skey=f3b6c41bd09b8d169679070be320a5ac&resize=500' , 7.00 , $categoryDog , ' Food ; Slow Carb')
 
 ];
 
